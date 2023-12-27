@@ -59,11 +59,10 @@ import ButtonBanner from './ButtonBanner.vue';
 }
 @media (min-width: 768px) {
   .tb {
-    height: 340px;
+    height: 370px;
     &__line {
       width: 66px;
       height: 5px;
-
       background: #c115c4;
       margin-bottom: 20px;
     }

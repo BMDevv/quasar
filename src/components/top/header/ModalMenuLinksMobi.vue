@@ -1,18 +1,16 @@
 <template>
-  <transition name="menu-animated">
-    <div v-if="menuStore.open" class="mlb bg-dark absolute-top fullscreen">
-      <div class="container">
-        <div
-          @click="OpenAndScroll(item)"
-          class="mlb__link text-primary text-weight-medium q-py-md"
-          v-for="(item, index) in links_menu"
-          :key="index"
-        >
-          {{ item.text }}
-        </div>
+  <div v-if="menuStore.open" class="mlb bg-dark absolute-top">
+    <div class="container">
+      <div
+        @click="OpenAndScroll(item)"
+        class="mlb__link text-primary text-weight-medium q-py-md"
+        v-for="(item, index) in links_menu"
+        :key="index"
+      >
+        {{ item.text }}
       </div>
     </div>
-  </transition>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -41,6 +39,7 @@ const OpenAndScroll = (item: { link: string }) => {
 
 .mlb {
   z-index: 4;
+  padding-top: 60px;
   &__link {
     font-size: 20px;
     transition: all 0.2s ease-in-out;
