@@ -1,5 +1,5 @@
 <template>
-  <a href="/" class="logo row"></a>
+  <a href="/" class="logo row">aa</a>
 </template>
 
 <style lang="scss" scoped>
